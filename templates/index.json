@@ -1,31 +1,31 @@
 {
   "sections": {
     "home_image": {
-        "type": "featured-collection",
+        "type": "home-image",
         "settings": {}
     },
     "home_collections": {
-        "type": "featured-collection",
+        "type": "home-collections",
         "settings": {}
     },
     "home_highlights": {
-        "type": "featured-collection",
+        "type": "home-highlights",
         "settings": {}
     },
     "home_why": {
-        "type": "featured-collection",
+        "type": "home-why",
         "settings": {}
     },
     "home_blog": {
-        "type": "featured-collection",
+        "type": "home-blog",
         "settings": {}
     },
     "home_faq": {
-        "type": "featured-collection",
+        "type": "home-faq",
         "settings": {}
     },
     "home_contact": {
-        "type": "featured-collection",
+        "type": "home-contact",
         "settings": {}
     }
   },
