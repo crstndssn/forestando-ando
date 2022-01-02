@@ -1,1 +1,13 @@
-<p>blog</p>
+<div class="home-blog">
+    <div class="home-blog__title">
+        <h2>Blog</h2>
+    </div>
+    <div class="home-blog__grid">
+        {% for article in blogs['noticias'].articles limit: 3 %}
+        {% render 'card', url: article.url, imagen: article.image, price: product.price, title: article.title %}
+        {% endfor %}
+    </div>
+    <div class="home-blog__more">
+        <a>Ver mas</a>
+    </div>
+</div>

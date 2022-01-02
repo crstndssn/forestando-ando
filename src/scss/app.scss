@@ -1,6 +1,12 @@
+@import "mixins";
 @import "variables";
 
 @import "./components/home";
 
+@import "./global";
+
 // home
 @import "./components/home/home_image.scss";
+@import "./components/home/home_collections.scss";
+@import "./components/home/home_highlights.scss";
+@import "./components/home/home_blog.scss";
