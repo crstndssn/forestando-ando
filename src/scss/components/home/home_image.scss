@@ -2,14 +2,21 @@
     
     background-color: #FFFFF9;
     position: relative;
-    min-height: 80vh;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
+    @include media('tablet') {
+        min-height: 80vh;
+    }
+
     img {
         max-width: 100%;
-        max-height: 80vh;
+        max-height: 30vh;
+        @include media('tablet') {
+            max-height: 80vh;
+        }
     }
 
     h1, h2, h3, h4, p {
@@ -18,11 +25,16 @@
 
     &__images {
         width: 100%;
-        top: 0;
+        top: initial;
+        bottom: 0;
         left: 0;
         display: flex;
         justify-content: space-between;
         position: absolute;
+        @include media('tablet') {
+            top: 0;
+            bottom: initial;
+        }
 
     }
 
