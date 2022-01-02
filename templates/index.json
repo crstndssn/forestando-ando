@@ -1,32 +1,45 @@
 {
   "sections": {
     "home_image": {
-        "type": "home-image",
-        "settings": {}
+      "type": "home-image",
+      "settings": {
+        "description": "<p>Siembra vida y aprende de la naturaleza<\/p>",
+        "button_text": "Yo planto",
+        "button_link": "shopify:\/\/collections",
+        "left_image": "shopify:\/\/shop_images\/forestando-left.png",
+        "right_image": "shopify:\/\/shop_images\/forestando-right.png"
+      }
     },
     "home_collections": {
-        "type": "home-collections",
-        "settings": {}
+      "type": "home-collections",
+      "settings": {
+      }
     },
     "home_highlights": {
-        "type": "home-highlights",
-        "settings": {}
+      "type": "home-highlights",
+      "settings": {
+      }
     },
     "home_why": {
-        "type": "home-why",
-        "settings": {}
+      "type": "home-why",
+      "settings": {
+      }
     },
     "home_blog": {
-        "type": "home-blog",
-        "settings": {}
+      "type": "home-blog",
+      "settings": {
+      }
     },
     "home_faq": {
-        "type": "home-faq",
-        "settings": {}
+      "type": "home-faq",
+      "settings": {
+      }
     },
     "home_contact": {
-        "type": "home-contact",
-        "settings": {}
+      "type": "home-contact",
+      "settings": {
+        "heading": "Contact form"
+      }
     }
   },
   "order": [
