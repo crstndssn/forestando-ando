@@ -1,0 +1,13 @@
+<div class="home-highlights">
+    <div class="home-highlights__title">
+        <h2>Productos</h2>
+    </div>
+    <div class="home-highlights__grid">
+        {% for product in collections.all.products limit: 3 %}
+        {% render 'card', url: product.url, imagen: product.featured_image, price: product.price, title: product.title %}
+        {% endfor %}
+    </div>
+    <div class="home-highlights__more">
+        <a>Ver mas</a>
+    </div>
+</div>

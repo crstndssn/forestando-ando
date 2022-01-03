@@ -1,0 +1,48 @@
+<div class="home-image">
+    <div class="home-image__images">
+        <img class="home-image__images--left" src="{{ section.settings.left_image | img_url: 'master' }}" alt="">
+        <img class="home-image__images-right" src="{{ section.settings.right_image | img_url: 'master' }}" alt="">
+    </div>
+    <div class="home-image__content">
+        <h1 class="home-image__content--title">
+            <span class="home-image__content--title-1">forestando</span>
+            <span class="home-image__content--title-2">ando</span>
+        </h1>
+        <div class="home-image__content--description">{{ section.settings.description }}</div>
+        <a class="home-image__content--link" href="{{ section.settings.button_url }}">{{ section.settings.button_text }}</a>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Images",
+    "tag": "section",
+    "settings": [
+        {
+            "type": "richtext",
+            "label": "Description",
+            "id": "description"
+        },
+        {
+            "type": "text",
+            "label": "Button text",
+            "id": "button_text"
+        },
+        {
+            "type": "url",
+            "label": "Button link",
+            "id": "button_link"
+        },
+        {
+            "type": "image_picker",
+            "label": "Imagen izquierda",
+            "id": "left_image"
+        },
+        {
+            "type": "image_picker",
+            "label": "Imagen derecha",
+            "id": "right_image"
+        }
+    ]
+}
+{% endschema %}

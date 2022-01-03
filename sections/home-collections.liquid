@@ -1,0 +1,10 @@
+<div class="home-collections">
+    <div class="home-collections__container">
+        {% for collection in collections %}
+            <div class="home-collections__card">
+                <a class="home-collections__card--title" href="{{ collection.url }}">{{ collection.title }}</a>
+            </div>
+        {% endfor %}
+    </div>
+
+</div>
