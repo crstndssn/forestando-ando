@@ -12,21 +12,23 @@
     },
     "home_collections": {
       "type": "home-collections",
-      "settings": {
-      }
-    },
-    "home_highlights": {
-      "type": "home-highlights",
-      "settings": {
-      }
-    },
-    "home_why": {
-      "type": "home-why",
+      "disabled": true,
       "settings": {
       }
     },
     "home_blog": {
       "type": "home-blog",
+      "settings": {
+      }
+    },
+    "home_highlights": {
+      "type": "home-highlights",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "home_why": {
+      "type": "home-why",
       "settings": {
       }
     },
@@ -45,9 +47,9 @@
   "order": [
     "home_image",
     "home_collections",
+    "home_blog",
     "home_highlights",
     "home_why",
-    "home_blog",
     "home_faq",
     "home_contact"
   ]
