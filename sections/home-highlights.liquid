@@ -1,9 +1,9 @@
 <div class="home-highlights">
     <div class="home-highlights__title">
-        <h2>Productos</h2>
+        <h2></h2>
     </div>
     <div class="home-highlights__grid">
-        {% for product in collections.all.products limit: 3 %}
+        {% for product in collections.all.products limit: 6 %}
         {% render 'card', url: product.url, imagen: product.featured_image, price: product.price, title: product.title %}
         {% endfor %}
     </div>
