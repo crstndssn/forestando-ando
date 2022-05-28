@@ -1,13 +1,39 @@
 <div class="home-blog">
     <div class="home-blog__title">
-        <h2>Blog</h2>
+        <h2>{{ section.settings.section__title }}</h2>
     </div>
     <div class="home-blog__grid">
-        {% for article in blogs['noticias'].articles limit: 3 %}
+        {% for article in blogs['noticias'].articles limit: 6 %}
         {% render 'card', url: article.url, imagen: article.image, price: product.price, title: article.title %}
         {% endfor %}
     </div>
     <div class="home-blog__more">
-        <a>Ver mas</a>
+        <a href="{{ section.settings.section__link }}">{{ section.settings.section__text }}</a>
     </div>
 </div>
+
+{% schema %}
+{
+  "name": "Home blog",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section__title",
+      "label": "Title",
+      "default": "Blog"
+    },
+    {
+      "type": "text",
+      "id": "section__text",
+      "label": "Ver mas",
+      "default": "Ver mas"
+    },
+    {
+      "type": "url",
+      "id": "section__link",
+      "label": "Ver mas link"
+    }
+  ]
+}
+{% endschema %}
