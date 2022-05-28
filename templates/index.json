@@ -19,6 +19,9 @@
     "home_blog": {
       "type": "home-blog",
       "settings": {
+        "section__title": "Blog",
+        "section__text": "Ver mas",
+        "section__link": "shopify:\/\/blogs\/noticias"
       }
     },
     "home_highlights": {

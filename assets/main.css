@@ -96,6 +96,7 @@ body {
 @media (min-width: 720px) {
   .home-image__content--description {
     font-size: 2.5rem;
+    text-align: center;
   }
 }
 .home-image__content--link {
