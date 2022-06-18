@@ -349,3 +349,19 @@ body {
   inline-size: 90%;
   margin: 0 auto 3rem auto;
 }
+.home-brands .desktop {
+  display: none;
+}
+@media (min-width: 720px) {
+  .home-brands .desktop {
+    display: flex;
+  }
+}
+.home-brands .mobile {
+  display: flex;
+}
+@media (min-width: 720px) {
+  .home-brands .mobile {
+    display: none;
+  }
+}

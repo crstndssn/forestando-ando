@@ -16,4 +16,16 @@
     inline-size: 90%;
     margin: 0 auto 3rem auto;
   }
+  .desktop {
+    display: none;
+    @include media("tablet") {
+      display: flex;
+    }
+  }
+  .mobile {
+    display: flex;
+    @include media("tablet") {
+      display: none;
+    }
+  }
 }

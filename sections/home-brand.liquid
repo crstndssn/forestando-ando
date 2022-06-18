@@ -4,8 +4,11 @@
   </div>
   <div  class="home-brands__grid">
     {% for block in section.blocks %}
-      <a>
-        <img src="{{ block.settings.brand__image | img_url: 'master' }}" />
+      <a class="mobile" href="{{  block.settings.brand__link }}">
+        <img src="{{ block.settings.brand__image--mobile | img_url: 'master' }}" />
+      </a>
+      <a class="desktop" href="{{  block.settings.brand__link }}">
+        <img src="{{ block.settings.brand__image--desktop | img_url: 'master' }}" />
       </a>
     {% endfor %}
   </div>
@@ -29,8 +32,18 @@
       "settings": [
         {
           "type": "image_picker",
-          "id": "brand__image",
-          "label": "Title"
+          "id": "brand__image--desktop",
+          "label": "Desktop"
+        },
+        {
+          "type": "image_picker",
+          "id": "brand__image--mobile",
+          "label": "Mobile"
+        },
+        {
+          "type": "url",
+          "id": "brand__link",
+          "label": "ver mas link"
         }
       ]
     }

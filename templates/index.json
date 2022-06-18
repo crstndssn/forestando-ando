@@ -3,9 +3,9 @@
     "home_image": {
       "type": "home-image",
       "settings": {
-        "description": "<p>Siembra vida y aprende de la naturaleza<\/p>",
-        "button_text": "Yo planto",
-        "button_link": "shopify:\/\/collections",
+        "description": "<p>siembra vida y aprende de la naturaleza<\/p>",
+        "button_text": "yo planto",
+        "button_link": "shopify:\/\/collections\/all",
         "left_image": "shopify:\/\/shop_images\/forestando-left.png",
         "right_image": "shopify:\/\/shop_images\/forestando-right.png"
       }
@@ -29,7 +29,9 @@
         "5ae7163f-210a-47bc-91f1-97ed36447449": {
           "type": "brand",
           "settings": {
-            "brand__image": "shopify:\/\/shop_images\/selecto-huila_1.png"
+            "brand__image--desktop": "shopify:\/\/shop_images\/selecto-huila_1.png",
+            "brand__image--mobile": "shopify:\/\/shop_images\/selecto-huila-mobile.png",
+            "brand__link": "shopify:\/\/blogs\/selecto-huila"
           }
         }
       },
@@ -43,6 +45,9 @@
     "home_highlights": {
       "type": "home-highlights",
       "settings": {
+        "section__title": "biblioteca",
+        "section__text": "ver mas",
+        "section__link": "shopify:\/\/collections\/all"
       }
     },
     "home_blog": {
