@@ -1,20 +1,20 @@
-<div class="home-blog">
-    <div class="home-blog__title">
-        <h2>{{ section.settings.section__title }}</h2>
-    </div>
-    <div class="home-blog__grid">
-        {% for article in blogs['adaptacion-al-entorno'].articles limit: 6 %}
+<div class="home-news">
+  <div class="home-news__title">
+    <h2>{{ section.settings.section__title }}</h2>
+  </div>
+  <div class="home-news__grid">
+      {% for article in blogs['noticias'].articles limit: 6 %}
         {% render 'card', url: article.url, imagen: article.image, price: product.price, title: article.title %}
-        {% endfor %}
-    </div>
-    <div class="home-blog__more">
-        <a href="{{ section.settings.section__link }}">{{ section.settings.section__text }}</a>
-    </div>
+      {% endfor %}
+  </div>
+  <div class="home-news__more">
+      <a href="{{ section.settings.section__link }}">{{ section.settings.section__text }}</a>
+  </div>
 </div>
 
 {% schema %}
 {
-  "name": "Home blog",
+  "name": "home news",
   "tag": "section",
   "settings": [
     {

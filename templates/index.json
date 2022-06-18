@@ -12,32 +12,45 @@
     },
     "home_collections": {
       "type": "home-collections",
-      "disabled": true,
+      "settings": {
+      }
+    },
+    "home_news": {
+      "type": "home-news",
+      "settings": {
+        "section__title": "noticias",
+        "section__text": "ver mas",
+        "section__link": "shopify:\/\/blogs\/noticias"
+      }
+    },
+    "home_brands": {
+      "type": "home-brand",
+      "blocks": {
+        "5ae7163f-210a-47bc-91f1-97ed36447449": {
+          "type": "brand",
+          "settings": {
+            "brand__image": "shopify:\/\/shop_images\/selecto-huila_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "5ae7163f-210a-47bc-91f1-97ed36447449"
+      ],
+      "settings": {
+        "section__title": ""
+      }
+    },
+    "home_highlights": {
+      "type": "home-highlights",
       "settings": {
       }
     },
     "home_blog": {
       "type": "home-blog",
       "settings": {
-        "section__title": "Blog",
-        "section__text": "Ver mas",
-        "section__link": "shopify:\/\/blogs\/noticias"
-      }
-    },
-    "home_highlights": {
-      "type": "home-highlights",
-      "disabled": true,
-      "settings": {
-      }
-    },
-    "home_why": {
-      "type": "home-why",
-      "settings": {
-      }
-    },
-    "home_faq": {
-      "type": "home-faq",
-      "settings": {
+        "section__title": "adaptación al entorno",
+        "section__text": "ver mas",
+        "section__link": "shopify:\/\/blogs\/adaptacion-al-entorno"
       }
     },
     "home_contact": {
@@ -50,10 +63,10 @@
   "order": [
     "home_image",
     "home_collections",
-    "home_blog",
+    "home_news",
+    "home_brands",
     "home_highlights",
-    "home_why",
-    "home_faq",
+    "home_blog",
     "home_contact"
   ]
 }

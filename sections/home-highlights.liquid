@@ -1,6 +1,6 @@
 <div class="home-highlights">
     <div class="home-highlights__title">
-        <h2></h2>
+      <h2>{{ section.settings.section__title }}</h2>
     </div>
     <div class="home-highlights__grid">
         {% for product in collections.all.products limit: 6 %}
@@ -8,6 +8,32 @@
         {% endfor %}
     </div>
     <div class="home-highlights__more">
-        <a>Ver mas</a>
+      <a href="{{ section.settings.section__link }}">{{ section.settings.section__text }}</a>
     </div>
 </div>
+
+{% schema %}
+{
+  "name": "home highlights",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section__title",
+      "label": "Title",
+      "default": "Blog"
+    },
+    {
+      "type": "text",
+      "id": "section__text",
+      "label": "Ver mas",
+      "default": "Ver mas"
+    },
+    {
+      "type": "url",
+      "id": "section__link",
+      "label": "Ver mas link"
+    }
+  ]
+}
+{% endschema %}
