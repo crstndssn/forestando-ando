@@ -118,6 +118,9 @@ body {
 .home-collections {
   background-color: #35733D;
 }
+.home-collections a {
+  text-decoration: none;
+}
 .home-collections__container {
   inline-size: 90%;
   margin: 0 auto;
@@ -134,7 +137,6 @@ body {
   }
 }
 .home-collections__card {
-  padding: 7rem;
   background-color: #FFFFF9;
   text-align: center;
   border-radius: 2rem;
@@ -144,6 +146,7 @@ body {
   color: #35733D;
   font-size: 3rem;
   font-weight: 500;
+  margin: 7rem;
 }
 
 .home-highlights * {
